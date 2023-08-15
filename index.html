@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        function executeCCode() {
+            // Make an AJAX request to the server to execute the C code
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "execute.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var output = xhr.responseText;
+                    document.getElementById("output").textContent = output;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><span>A</span>nusua</div>
+        <ul class="navlist">
+            <li><a href="#home" style="--i:1;">Home</a></li>
+            <li><a href="#about" style="--i:2;">About</a></li>
+            <li><a href="#services" style="--i:3;">Services</a></li>
+            <li><a href="#skills" style="--i:4;">Skills</a></li>
+            <li><a href="#portfolio" style="--i:5;">Portfolio</a></li>
+            <li><a href="#contact" style="--i:6;">Contact</a></li>
+        </ul>
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content scroll-scale">
+            <h1>Hi! I'm Anusua Biswas</h1>
+            <div class="change-text">
+                <h3>And I'm</h3>
+                <h3>
+                    <span class="word">Youtuber</span>
+                    <span class="word">Web&nbsp;Developer</span>
+                    <span class="word">Android&nbsp;Developer</span>
+                </h3>
+            </div>
+
+            <p>Product designer and digital creative director working in design field for 10 years so far. specailized
+                in UI/UX, branding anf digital designs.</p>
+            <div class="info-box">
+                <div class="email-info">
+                    <h5>Email :</h5>
+                    <span>anusuabiswas0@gmail.com</span>
+                </div>
+                <div class="contact-info">
+                    <h5>Contact :</h5>
+                    <span>9883852758<br></span>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button id="downloadbutton">Download CV</button>
+                <form action="https://formsubmit.co/anusuabiswas0@gmail.com" method="POST" class="btn">Hire me now!</form>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/anusua.biswas.52" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/anusuabiswas.46/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/AnusuaBiswas6" target="_blank"><i class='bx bxl-twitter'></i></a>
+            </div>
+
+        </div>
+
+        <div class="home-image scroll-scale">
+            <div class="img-box">
+                <img src="img/man3.png" alt="">
+            </div>
+            <div class="liquid-shape">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="100%" id="blobSvg">
+                    <path fill="#12f7ff">
+                        <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M412,310.5Q417,371,370,423.5Q323,476,257.5,452Q192,428,132.5,403.5Q73,379,37,314.5Q1,250,37.5,186Q74,122,130,88Q186,54,253,44Q320,34,381.5,72Q443,110,425,180Q407,250,412,310.5Z;
+
+                            M429.5,323.5Q452,397,378.5,409Q305,421,246.5,431Q188,441,122,416Q56,391,36.5,320.5Q17,250,71,204.5Q125,159,161.5,124.5Q198,90,254.5,75.5Q311,61,354,102Q397,143,402,196.5Q407,250,429.5,323.5Z;
+
+                            M438,297Q380,344,348.5,400Q317,456,255,441Q193,426,121,411Q49,396,31.5,323Q14,250,66.5,202.5Q119,155,151,99.5Q183,44,244.5,61Q306,78,354.5,108.5Q403,139,449.5,194.5Q496,250,438,297Z;
+
+                            M395,299.5Q386,349,353.5,409.5Q321,470,256.5,450Q192,430,154.5,388Q117,346,101.5,298Q86,250,69,178Q52,106,127.5,105.5Q203,105,254,93Q305,81,369.5,98.5Q434,116,419,183Q404,250,395,299.5Z;
+
+                            M424.5,295Q373,340,337.5,375.5Q302,411,250,411Q198,411,136,394.5Q74,378,73.5,314Q73,250,69,183Q65,116,127.5,91Q190,66,254,54Q318,42,370.5,83Q423,124,449.5,187Q476,250,424.5,295Z;
+
+                            M440.5,301.5Q392,353,358.5,417Q325,481,252.5,473Q180,465,140,412Q100,359,81.5,304.5Q63,250,84,197.5Q105,145,151,116.5Q197,88,258.5,61Q320,34,379.5,73.5Q439,113,464,181.5Q489,250,440.5,301.5Z;
+
+                            M446,316Q431,382,366,394Q301,406,249,409.5Q197,413,148.5,386Q100,359,76.5,304.5Q53,250,73,193Q93,136,145,111Q197,86,247.5,93.5Q298,101,346,123Q394,145,427.5,197.5Q461,250,446,316Z;
+
+                            M412,310.5Q417,371,370,423.5Q323,476,257.5,452Q192,428,132.5,403.5Q73,379,37,314.5Q1,250,37.5,186Q74,122,130,88Q186,54,253,44Q320,34,381.5,72Q443,110,425,180Q407,250,412,310.5Z;
+                            "></animate>
+                    </path>
+                </svg>
+            </div>
+            <div class="liquid-shape">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="100%" id="blobSvg">
+                    <path fill="#12f7ff">
+                        <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M412,310.5Q417,371,370,423.5Q323,476,257.5,452Q192,428,132.5,403.5Q73,379,37,314.5Q1,250,37.5,186Q74,122,130,88Q186,54,253,44Q320,34,381.5,72Q443,110,425,180Q407,250,412,310.5Z;
+
+                            M429.5,323.5Q452,397,378.5,409Q305,421,246.5,431Q188,441,122,416Q56,391,36.5,320.5Q17,250,71,204.5Q125,159,161.5,124.5Q198,90,254.5,75.5Q311,61,354,102Q397,143,402,196.5Q407,250,429.5,323.5Z;
+
+                            M438,297Q380,344,348.5,400Q317,456,255,441Q193,426,121,411Q49,396,31.5,323Q14,250,66.5,202.5Q119,155,151,99.5Q183,44,244.5,61Q306,78,354.5,108.5Q403,139,449.5,194.5Q496,250,438,297Z;
+
+                            M395,299.5Q386,349,353.5,409.5Q321,470,256.5,450Q192,430,154.5,388Q117,346,101.5,298Q86,250,69,178Q52,106,127.5,105.5Q203,105,254,93Q305,81,369.5,98.5Q434,116,419,183Q404,250,395,299.5Z;
+
+                            M424.5,295Q373,340,337.5,375.5Q302,411,250,411Q198,411,136,394.5Q74,378,73.5,314Q73,250,69,183Q65,116,127.5,91Q190,66,254,54Q318,42,370.5,83Q423,124,449.5,187Q476,250,424.5,295Z;
+
+                            M440.5,301.5Q392,353,358.5,417Q325,481,252.5,473Q180,465,140,412Q100,359,81.5,304.5Q63,250,84,197.5Q105,145,151,116.5Q197,88,258.5,61Q320,34,379.5,73.5Q439,113,464,181.5Q489,250,440.5,301.5Z;
+
+                            M446,316Q431,382,366,394Q301,406,249,409.5Q197,413,148.5,386Q100,359,76.5,304.5Q53,250,73,193Q93,136,145,111Q197,86,247.5,93.5Q298,101,346,123Q394,145,427.5,197.5Q461,250,446,316Z;
+
+                            M412,310.5Q417,371,370,423.5Q323,476,257.5,452Q192,428,132.5,403.5Q73,379,37,314.5Q1,250,37.5,186Q74,122,130,88Q186,54,253,44Q320,34,381.5,72Q443,110,425,180Q407,250,412,310.5Z;
+                            "></animate>
+                    </path>
+                </svg>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="about" class="about">
+        <div class="img-about scroll-scale">
+            <img src="img/about-me-pic2.png" alt="">
+            <div class="info-about1">
+                <span>10+</span>
+                <p>Years of Experience</p>
+            </div>
+            <div class="info-about2">
+                <span>150+</span>
+                <p>Projects Completed</p>
+            </div>
+            <div class="info-about3">
+                <span>150+</span>
+                <p>Projects Completed</p>
+            </div>
+
+        </div>
+
+        <div class="about-content scroll-scale">
+            <span>Let me introduce myself</span>
+            <h2>About Me</h2>
+            <h3>A story of good</h3>
+            <p class="contents">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
+                <span id="moretext" class="hidden"> It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </span>
+        </p>
+            <div class="btn-box">
+                <button id="readmorebutton">Read More!</button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="services" class="services">
+        <div class="main-text scroll-scale">
+            <span>What I will do for you</span>
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="section-services scroll-scale">
+            <div class="service-box">
+                <i class="bx bxs-layer service-icon"></i>
+                <h3>Graphic Designer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto culpa eveniet quia non sed,
+                    sequi molestias eos harum velit labore, possimus ratione dolore error aliquam nulla sit neque ad.
+                </p>
+                <div class="btn-box service-btn">
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <i class="bx bx-code-alt service-icon"></i>
+                <h3>Graphic Designer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto culpa eveniet quia non sed,
+                    sequi molestias eos harum velit labore, possimus ratione dolore error aliquam nulla sit neque ad.
+                </p>
+                <div class="btn-box service-btn">
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class="bx bx-desktop service-icon"></i>
+                <h3>Graphic Designer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto culpa eveniet quia non sed,
+                    sequi molestias eos harum velit labore, possimus ratione dolore error aliquam nulla sit neque ad.
+                </p>
+                <div class="btn-box service-btn">
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="main-text scroll-scale">
+            <span>technical and professional</span>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skill-main">
+            <div class="skill-left scroll-scale">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>72%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JAVA</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="java"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JAVASCRIPT</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>66%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-right scroll-scale">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        <div class="text">
+                            <big>80%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        <div class="text">
+                            <big>70%</big>
+                            <small>Communication</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="60"></div>
+                        <div class="text">
+                            <big>60%</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="main-text scroll-scale">
+            <span>What I Will do for you</span>
+            <h2>Latest Project</h2>
+        </div>
+
+        <div class="container scroll-scale">
+            <div class="filter-buttons scroll-scale">
+                <button class="button" data-filter="all">All</button>
+                <button class="button" data-filter=".product">Product</button>
+                <button class="button" data-filter=".inter">Interacting</button>
+                <button class="button" data-filter=".web">Web App</button>
+            </div>
+
+            <div class="portfolio-gallery scroll-scale">
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Graphic Designer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad assumenda repudiandae,
+                            tenetur fugiat natus dolorem, dolor, explicabo voluptatum molestiae iste?</p>
+                        <!--<a href="SNAKEGAME.c"><i class="bx bx-link-external"></i></a>-->
+                        <button onclick="executeCCode()">Execute C Code</button>
+                        <div id="output"></div>
+                    </div>
+                </div>
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Graphic Designer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad assumenda repudiandae,
+                            tenetur fugiat natus dolorem, dolor, explicabo voluptatum molestiae iste?</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="port-box mix inter">
+                    <div class="port-image">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Graphic Designer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad assumenda repudiandae,
+                            tenetur fugiat natus dolorem, dolor, explicabo voluptatum molestiae iste?</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="port-box mix inter">
+                    <div class="port-image">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Graphic Designer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad assumenda repudiandae,
+                            tenetur fugiat natus dolorem, dolor, explicabo voluptatum molestiae iste?</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="port-box mix inter">
+                    <div class="port-image">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Graphic Designer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad assumenda repudiandae,
+                            tenetur fugiat natus dolorem, dolor, explicabo voluptatum molestiae iste?</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="port-box mix web">
+                    <div class="port-image">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Graphic Designer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad assumenda repudiandae,
+                            tenetur fugiat natus dolorem, dolor, explicabo voluptatum molestiae iste?</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="main-text scroll-scale">
+            <span>Ask me question</span>
+            <h2>Contact Me!</h2>
+        </div>
+        <div class="container">
+        <form class="scroll-scale" id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!--<label for="number">Phone Number:</label>
+            <input type="number" id="number" name="number" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="email" name="email" required>-->
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="20" cols="10" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+        
+        </form>
+        </div>
+    </section>
+
+     <footer>
+        <p class="scroll-scale">Copyright &copy; 2023 by ParsCoder || All Right Reserved.</p>
+        <a href="#home"></a>
+     </footer>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="mixitup.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
